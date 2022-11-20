@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    margin: auto;
+    max-width: 1000px;
+}
+
+.boxContainer{
+    display: block;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.header{
+    position: fixed;
+    top: 0px;
+    width: calc(min(100%, 1000px));
+    flex: 100%;
+    background-color: black;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+.box1{
+    flex: 2;
+    background-color: cornflowerblue;
+    font-size: 1.5em;
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.largeBox{
+    flex: 3 !important;
+    font-size: 1.5em;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.box1 img{
+    width: 100%;
+}
+.auteur{
+    position: fixed;
+    bottom: 0px;
+    flex: 100%;
+    background-color: black;
+    width: calc(min(100%, 1000px));
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+.texte{
+    margin-top: 20px;
+}
+.titreSecondaire{
+    color: rgb(89, 87, 87);
+    font-family: 'Ubuntu', sans-serif;
+}
+.titrePrimaire{
+    font-weight: bolder;
+    font-size: 1.4em;
+    font-family: 'Ubuntu', sans-serif;
+}
+.headerBuff {
+    height: 80px;
+}
+.auteurBuff{
+    height: 5px;
+}
+
+@media screen and (min-width: 600px) {
+    .boxContainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .box1{
+        flex: 2;
+        background-color: cornflowerblue;
+        font-size: 1.5em;
+        border: 1px solid gray;
+        padding: 10px;
+    }
+    .largeBox{
+        flex: 3 !important;
+        font-size: 1.5em;
+        border: 1px solid gray;
+    }
+}
